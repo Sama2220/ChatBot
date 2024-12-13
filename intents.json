@@ -1,0 +1,98 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there", 
+                "How are you", 
+                "Is anyone there?", 
+                "Hey", 
+                "Hola", 
+                "Hello", 
+                "Good day",
+                "Hey, how's it going?",
+                "What's up?"
+            ],
+            "responses": [
+                "Hello!", 
+                "Good to see you again!", 
+                "Hi there, how can I help you today?",
+                "Hey, nice to see you!"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye", 
+                "See you later", 
+                "Goodbye", 
+                "Nice chatting to you, bye", 
+                "Till next time",
+                "Take care",
+                "Have a great day!"
+            ],
+            "responses": [
+                "See you!", 
+                "Have a nice day!", 
+                "Bye! Come back again soon.",
+                "Until next time!"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks", 
+                "Thank you", 
+                "That's helpful", 
+                "Awesome, thanks", 
+                "Thanks for helping me",
+                "I appreciate it"
+            ],
+            "responses": [
+                "My pleasure!", 
+                "You're welcome!",
+                "Glad I could help!",
+                "No problem!"
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "goods_list",
+            "patterns": [
+                "I need to buy",
+                "I am looking for",
+                "Can you help me find",
+                "Where can I find",
+                "I want to buy",
+                "Looking to purchase",
+                "Need to purchase",
+                "Searching for items",
+                "List of items",
+                "What do you have in stock",
+                "Tell me about your products",
+                "Show me what you've got",
+                "Looking for something specific",
+                "Inventory check"
+            ],
+            "responses": [
+                "Please provide your list of goods, and I will tell you their shelf numbers.",
+                "Sure, let me know what you're looking for.",
+                "I can assist with locating items. What do you need?",
+                "Tell me what items you're interested in, and I'll find them for you.",
+                "Here to help! What items are on your shopping list?",
+                "Let's start with your list of items, and I'll find their locations."
+            ],
+            "context": ["goods_list"]
+        },
+        {
+            "tag": "provide_shelves",
+            "patterns": [],
+            "responses": [
+                "Here are the shelf numbers for your items: "
+            ],
+            "context": ["goods_list"]
+        }
+    ]
+}
